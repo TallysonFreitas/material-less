@@ -1,6 +1,9 @@
 .marginBottom8 {
   margin-bottom: 8px;
 }
+.listNone {
+  list-style: none;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,13 +11,18 @@
   font-family: Roboto;
 }
 body {
-  background-color: #f1f1ee;
-  color: #FF1B1C;
+  background-color: #5A2328;
+  color: white;
 }
 .container {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 1023px) {
   .container {
@@ -30,6 +38,8 @@ header {
   padding: 24px;
 }
 header .profile-avatar {
+  width: 98px;
+  height: 98px;
   display: block;
   margin: 0 auto 24px;
   border-radius: 50%;
@@ -54,7 +64,7 @@ header .profile-avatar {
   justify-content: space-between;
   max-width: 240px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 .social-links li {
   list-style: none;
@@ -64,4 +74,30 @@ header .profile-avatar {
 }
 .social-links li img:hover {
   transform: scale(1.3);
+}
+main {
+  width: 100%;
+}
+.projects-list {
+  width: 100%;
+}
+.projects-list-item {
+  list-style: none;
+  margin-bottom: 16px;
+}
+.projects-list-item a {
+  text-decoration: none;
+  background-color: #e2b78c;
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  border: 3px solid #e2b78c;
+  transition: all ease 0.3s;
+}
+.projects-list-item a:hover {
+  background-color: transparent;
+  color: #e2b78c;
 }
